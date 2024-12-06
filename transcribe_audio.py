@@ -1,8 +1,10 @@
 import whisper
 
-# مسیر فایل صوتی
-audio_path = "/home/aturzone/Desktop/audio_converted.wav"  # فایل صوتی که می‌خواهید تبدیل کنید
-output_txt_path = "/home/aturzone/Desktop/transcription.txt"  # نام فایل متنی خروجی
+# دریافت مسیر فایل صوتی از کاربر
+audio_path = input("لطفاً مسیر فایل صوتی را وارد کنید: ")  # دریافت آدرس فایل صوتی از کاربر
+
+# دریافت مسیر فایل متنی خروجی از کاربر
+output_txt_path = input("لطفاً مسیر فایل متنی خروجی را وارد کنید: ")  # دریافت آدرس فایل متنی خروجی از کاربر
 
 # بارگذاری مدل Whisper
 print("Loading Whisper model...")
